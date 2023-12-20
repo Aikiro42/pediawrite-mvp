@@ -1,0 +1,35 @@
+<h1 class="content-title">Dashboard</h1>
+<div id="dashboard" class="content-body">
+  <div id="updates" class="content-panel">
+    <h1><a href="#">Updates</a></h1>
+    <div id="update-list">
+    </div>
+  </div>
+  <div class="content-panel">
+    <h1><a href="#">Pending Approval</a></h1>
+    <div id="pending-approval-list">
+      
+      <div class="pending-approval-item">
+        <p>X-ray <span>(546076037560348576)</span></p>
+        <p class="item-status">Status: <span class="pending">Pending<span></p>
+      </div>
+
+      <div class="pending-approval-item">
+        <p>X-ray <span>(546076037560348576)</span></p>
+        <p class="item-status">Status: <span class="approved">Approved<span></p>
+      </div>
+
+      <div class="pending-approval-item">
+        <p>X-ray <span>(546076037560348576)</span></p>
+        <p class="item-status">Status: <span class="denied">Denied<span></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+loadDashboardUpdates();
+loadDashboardPendingApproval();
+</script>

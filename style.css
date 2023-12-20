@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+*.red{
+  background: red;
+}
+
+*.blue{
+  background: blue;
+}
+
+*.green{
+  background: green;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  background: #202020;
+  display: flex;
+  height: 100%;
+  min-width: 800px;
+}
+
+
+.green-button{
+  background: #469e49;
+  color: white;
+  cursor: pointer;
+}
+
+.green-button:hover{
+  background: #83C886;
+}
+
+.green-button:active{
+  background: #387F3B;
+}
+
+
+#main-sidebar {
+  width: 15%;
+  min-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #469e49;
+  color: white;
+}
+
+#home-link {
+  background-image: url("img/logo-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 100%;
+  height: 10%;
+  padding: 1% 0;
+  object-fit: cover;
+}
+
+#home-link:hover{
+  background-color: rgba(255,255,255,0.25);
+  background-size: 85%;
+}
+
+#profile-link {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+#profile-link:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+
+#profile-link * {
+  margin: auto;
+  text-align: center;
+}
+
+#profile-link img{
+  width: 25%;
+  border-radius: 25%;
+  margin: 10px auto;
+}
+
+#main-sidebar nav{
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid white;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#main-sidebar nav a{
+  text-align: left;
+  padding: 3% 3%;
+}
+
+#main-sidebar nav a#active{
+  background-color: rgba(255,255,255,0.25);
+}
+
+#main-sidebar nav a:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+
+div#content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 800px
+}
+
+div#content .content-title{
+  color: white;
+  font-weight: normal;
+  padding-left: 1%;
+  padding-top: 0.5%;
+}
+
+div#content .content-body{
+  width: 95%;
+  height: 95%;
+  margin: 1%;
+  padding: 1%;
+  background: #303030;
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  align-items: flex-start;
+}
+
+/*------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  body{
+    flex-direction: column;
+  }
+  #home-link{
+    display: none;
+  }
+
+  #main-sidebar {
+    width: 100%;
+    max-width: 600px;
+    padding: 1%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #main-sidebar #profile-link{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-sidebar #profile-link img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-sidebar #profile-link span{
+    display: none;
+  }
+
+  #main-sidebar nav *{
+    z-index: 100;
+  }
+  #main-sidebar nav a{
+    text-align: right;
+  }
+
+  body * {
+    max-width: 500px;
+  }
+
+  #content *{
+    flex-direction: column;
+  }
+}

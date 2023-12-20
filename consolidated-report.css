@@ -1,0 +1,98 @@
+.content-body#consolidated-report{
+  color: white;
+  width: 1048px;
+  flex-direction: column;
+}
+
+.content-body#consolidated-report #search-panel{
+  display: flex;
+  flex-direction: column;
+  width: 1048px;
+  margin-bottom: 1%;
+}
+
+.content-body#consolidated-report #search-panel .filter-field{
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-body#consolidated-report #search-panel .filter-field *{
+  margin-bottom: 0.5%;
+  padding: 0.5%;
+}
+
+.content-body#consolidated-report #search-panel #patient-query input{
+  flex-grow: 2;
+  text-align: left;
+}
+
+.content-body#consolidated-report #search-panel #search-button{
+  padding: 1%;
+  display: block;
+}
+
+#consolidated-report #consolidated-report-patient-info{
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+#consolidated-report #consolidated-report-patient-info h3{
+  font-size: 1em;
+}
+#consolidated-report #consolidated-report-patient-info p{
+  font-family: monospace;
+  font-size: 0.7em;
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+#consolidated-report #consolidated-report-patient-info p span{
+  display: block;
+}
+
+#consolidated-report-content{
+  width: 1048px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #aaaaaa;
+  overflow-y: scroll;
+}
+
+#consolidated-report-content .encounter-report{
+  border-bottom: 2px solid #aaaaaa;
+  padding: 1%;
+}
+
+#consolidated-report-content .encounter-report .info{
+  border-bottom: 1px solid rgba(255,255,255,0.125);
+  padding: 1%;
+}
+#consolidated-report-content .encounter-report .info *{
+  font-family: monospace;
+  font-size: 1em;
+  display: flex;
+}
+
+#consolidated-report-content .encounter-report .info .field{
+  text-align: right;
+  width: 15%;
+}
+#consolidated-report-content .encounter-report .info .value{
+  font-weight: bold;
+}
+
+#consolidated-report-content .encounter-report .encounter{
+  font-size: 0.8em;
+  padding: 2%;
+}
+
+#consolidated-report-error-message{
+  color: red;
+  margin: 1% 0;
+}

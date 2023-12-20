@@ -1,0 +1,108 @@
+
+#dashboard{
+  margin: 1%;
+  width: 95%;
+  height: 95%;
+  background: #303030;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  align-items: flex-start;
+}
+
+#dashboard .content-panel{
+  width: 30%;
+  margin: 1% 1%;
+  flex-basis: 10%;
+  height: 400px;
+  color: white;
+  border-radius: 5px;
+  background: #505050;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  flex-grow: 1;
+}
+
+#dashboard .content-panel h1{
+  padding: 15px;
+  font-size: 1.2em;
+  display: block;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: 2px solid #212121;
+}
+
+#dashboard .content-panel h1 a:hover{
+  text-decoration: underline;
+}
+
+#dashboard #updates{
+  flex-grow: 2;
+}
+
+#dashboard #updates #update-list{
+  overflow: scroll;
+  height: 80%;
+  border-bottom: 2px solid #212121;
+}
+#dashboard #updates .update-item{
+  font-size: 0.9em;
+  padding: 15px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #a0a0a0;
+}
+
+#dashboard #updates .update-item.new{
+  background: rgba(255,255,255,0.125);
+  font-weight: bold;
+}
+
+#dashboard #updates .update-item:hover{
+  background: white;
+}
+
+#dashboard #updates .update-item:hover *{
+  color: black
+}
+
+#dashboard #updates .update-item .title{
+  width: 90%;
+  overflow: hidden;
+}
+
+#dashboard #updates .update-item .date-time{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7em;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#dashboard .content-panel #pending-approval-list .pending-approval-item{
+  padding: 10px;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+#dashboard .content-panel #pending-approval-list .pending-approval-item p{
+  font-size: 0.8em;
+}
+
+#dashboard .content-panel #pending-approval-list .pending-approval-item p.item-status{
+  font-size: 0.7em;
+  margin-top: 3%;
+  font-style: italic;
+}
+
+#dashboard .content-panel #pending-approval-list .pending-approval-item p.item-status .pending{
+  color: yellow;
+}
+
+#dashboard .content-panel #pending-approval-list .pending-approval-item p.item-status .approved{
+  color: lightgreen;
+}
+
+#dashboard .content-panel #pending-approval-list .pending-approval-item p.item-status .denied{
+  color: pink;
+}

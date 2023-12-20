@@ -1,0 +1,43 @@
+<h1 class="content-title">Borrow Equipment</h1>
+<div id="borrowers-form" class="content-body">
+
+  <div id="borrower-form-selector">
+    <h1>Equipment to Borrow:</h1>
+    <select id="equipment-list" name="borrower-form">
+      <option value="X-ray">X-ray</option>
+      <option value="Neuralizer">Neuralizer</option>
+      <option value="Skibidigun">Skibidigun</option>
+      <option value="Lobotomizer">Lobotomizer</option>
+    </select>
+  </div>
+
+  <div id="borrower-form-content">
+    <div class="autofill-info">
+      <span class="form-info"><h2 class="info-name">Borrower's Name:</h2> <span class="info-value" id="current-user-name"></span></span>
+      <span class="form-info"><h2 class="info-name">Position:</h2> <span class="info-value" id="current-user-position"></span></span>
+    </div>
+    <div id="user-form">
+      <label for="other-users">RFID</label>
+      <input type="text" id="borrower-form-rfid" class="text-field" name="equipment-rfid"></input>
+
+      <label for="equipment-purpose">Purpose</label>
+      <textarea id="borrower-form-purpose" name="equipment-purpose"></textarea>
+      
+      <label for="other-users">Other Users</label>
+      <input type="text" id="borrower-form-other-users" class="text-field" name="other-users"></input>
+
+      <button name="submit-form" class="submit-button" value="Submit" onclick="submitBorrowForm()">Submit</button>
+    </div>
+  </div>
+<div>
+
+<script>
+loadBorrowerFormsIndex()
+var equipmentListHTML = '';
+var globalDemoData;
+for (var equipmentID in globalDemoData.equipments) {
+    equipmentListHTML += "\n    <option value=\"".concat(equipmentID, "\">").concat(globalDemoData.equipments[equipmentID].name, "</option>\n  ");
+}
+$("#equipment-list").html(equipmentListHTML);
+
+</script>

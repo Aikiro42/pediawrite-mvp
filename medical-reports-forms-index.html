@@ -1,0 +1,46 @@
+<h1 class="content-title">Medical Records Summary Report</h1>
+<div id="medical-reports-form" class="content-body">
+  <div id="medical-report-form">
+    <div class="autofill-info">
+      <span class="form-info"><h2 class="info-name">Medic's Name:</h2> <span class="info-value" id="medical-report-employee-name">Cornell, James</span></span>
+      <span class="form-info"><h2 class="info-name">Position:</h2> <span class="info-value" id="medical-report-employee-position">Junior Researcher</span></span>
+      <span class="form-info"><h2 class="info-name">Date:</h2> <span class="info-value" id="medical-report-date">2023-12-05</span></span>
+    </div>
+
+    <div class="form-field"> 
+      <label for="patient-name">Patient ID:</label>
+      <input type="text" id="patient-id">
+      <button class="input-button green-button" onclick="searchPatientID()">Search</button>
+    </div>
+
+    <div id="patient-info" class="autofill-info patient-autofill-info">
+    </div>
+
+  </div>
+  <div id="report-table">
+    <div id="report-table-header-row" class="report-table-row">
+      <span class="col1">Date & Time</span>
+      <span class="col2">Reference/Page No.</span>
+      <span class="col3">Provider</span>
+      <span class="col4">Encounter Summary</span>
+    </div>
+
+    <div class="report-table-row medical-report-form-data">
+      <div class="col1 entry-datetime">
+        <input class="entry-date" type="date">
+        <input class="entry-time" type="time">
+      </div>
+      <input type="text" class="entry-reference col2">
+      <input type="text" class="entry-provider col3">
+      <textarea class="entry-encounter col4"></textarea>
+    </div>
+
+    <button class="report-table-row add-row-button green-button" onclick="appendReportTableRow()">+</button>
+  </div>
+  <p id="medical-report-error-message"></p>
+  <button class="green-button" id="submit-medical-form-button" onclick="saveMedicalReport()">Submit Medical Summary Record</button>
+</div>
+
+<script>
+  initMedicalReport()
+</script>

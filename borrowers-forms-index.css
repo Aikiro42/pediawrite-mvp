@@ -1,0 +1,83 @@
+.content-body#borrowers-form{
+  flex-direction: column;
+}
+
+#borrower-form-selector{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#borrower-form-selector h1{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+textarea{
+  font-size: .8em;
+}
+
+#borrower-form-selector #equipment-list{
+  width: 50%;
+  padding: 10px;
+  background: #a0a0a0;
+  margin-left: 3%;
+  border-radius: 3px;
+  color: black;
+}
+
+.content-body#borrowers-form #borrower-form-content{
+  width: 500px;
+}
+
+.content-body#borrowers-form #borrower-form-content .autofill-info{
+  margin: 3% 0 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.content-body#borrowers-form #borrower-form-content .form-info{
+  display: flex;
+  padding: 1%;
+  color: #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+}
+
+.content-body#borrowers-form #borrower-form-content .form-info *{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.content-body#borrowers-form #borrower-form-content .form-info .info-name{
+  margin-right: 2%;
+}
+.content-body#borrowers-form #borrower-form-content .form-info .info-value{
+  flex-grow: 8;
+  text-align: right;
+}
+
+.content-body#borrowers-form #borrower-form-content #user-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+}
+
+#borrower-form-content #user-form textarea{
+  resize: none;
+  height: 200px;
+  padding: 5px;
+}
+
+#borrower-form-content #user-form input.text-field{
+  padding: 5px;
+}
+
+#borrower-form-content #user-form label{
+  margin: 3% 0 1% 0;
+}
+
+#borrower-form-content #user-form button.submit-button{
+  margin: 3% 0;
+  padding: 3%;
+}

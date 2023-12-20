@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Pediawrite Lab Manager</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="login.css" rel="stylesheet" />
+    <link href="dashboard.css" rel="stylesheet" />
+    <link href="borrowers-forms-index.css" rel="stylesheet" />
+    <link href="medical-reports-forms-index.css" rel="stylesheet" />
+    <link href="consolidated-report.css" rel="stylesheet" />
+    <link href="user-profile.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="main-sidebar">
+      <a id="home-link" href="#" alt="Go Home" onclick="loadDashboard()"></a>
+      <a id="profile-link" href="#" alt="Go to Profile" onclick="loadUserProfile()">
+        <img src="img/sample-profile-pic.jpg" />
+        <span id="profile-name">Rscr. James Cornell</span>
+      </a>
+      <nav>
+        <a onclick="navlinkOnclickHandler('dashboard.html')">Dashboard</a>
+        <a onclick="navlinkOnclickHandler('borrowers-forms-index.html')">Borrow</a>
+        <a onclick="navlinkOnclickHandler('medical-reports-forms-index.html')">Medical Report Forms</a>
+        <a onclick="navlinkOnclickHandler('consolidated-report.html')">Consolidated Report</a>
+        <a onclick="logout()">Logout</a>
+      </nav>
+    </div>
+    <div id="content">
+    </div>
+  </body>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script> 
+</html>

@@ -1,0 +1,23 @@
+<h1 class="content-title">Consolidated Patient Report</h1>
+<div id="consolidated-report" class="content-body">
+  <div id="search-panel">
+    
+    <div id="patient-query" class="filter-field">
+      <span id="patient-id-label">Patient ID:</span>
+      <input type="text" id="consolidated-report-patient-id"></input>
+    </div>
+
+    <div id="timeframe-query" class="filter-field">
+      <span id="patient-id-label">Start Date/Time:</span>
+      <input type="datetime-local" id="consolidated-report-start-date"></input>
+      <span id="patient-id-label">End Date/Time:</span>
+      <input type="datetime-local" id="consolidated-report-end-date"></input>
+    </div>
+    <p id="consolidated-report-error-message"></p>
+    <button id="search-button" class="green-button" onclick="loadConsolidatedReport()">Search</button>
+  </div>
+  
+  <div id="consolidated-report-content">
+  </div>
+
+</div>

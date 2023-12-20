@@ -1,0 +1,137 @@
+.content-body#medical-reports-form{
+  display: block;
+  color: white;
+  background-color: magenta;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.content-body#medical-reports-form #medical-report-form{
+  width: 100%;
+  max-width: 1028px;
+}
+
+.content-body#medical-reports-form #medical-report-form .autofill-info{
+  margin: 2% 0 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.content-body#medical-reports-form #medical-report-form .patient-autofill-info{
+  margin: 0;
+}
+
+.content-body#medical-reports-form #medical-report-form .autofill-info .form-info{
+  display: flex;
+  padding: 1%;
+  color: #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+}
+
+
+.content-body#medical-reports-form #medical-report-form .autofill-info .form-error{
+  color: red !important;
+}
+
+.content-body#medical-reports-form #medical-report-form .autofill-info .form-info *{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+
+.content-body#medical-reports-form #medical-report-form .autofill-info .form-info .info-name{
+  margin-right: 2%;
+}
+
+.content-body#medical-reports-form #medical-report-form .autofill-info .form-info .info-value{
+  flex-grow: 8;
+  text-align: right;
+}
+
+.content-body#medical-reports-form #medical-report-form .form-field{
+  padding: 1%;
+}
+
+.content-body#medical-reports-form #medical-report-form .form-field label{
+  margin-right: 1%;
+}
+
+.content-body#medical-reports-form #medical-report-form .form-field input,
+.content-body#medical-reports-form #medical-report-form .form-field button{
+  padding: 0.8%;
+}
+
+.content-body#medical-reports-form #report-table{
+  width: 1010px;
+  height: 400px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  background: #252525;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row{
+  display: flex;
+}
+
+.content-body#medical-reports-form #report-table #report-table-header-row{
+  background: #303030;
+  border-bottom: 2px solid #aaaaaa;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row * {
+  display: block;
+  width: 25%;
+  border: 2px solid #303030;
+  padding: 1% 0;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row .entry-datetime{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row .entry-datetime *{
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row .col1{
+  width: 12.5%;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row .col4{
+  width: 37.5%;
+}
+
+.content-body#medical-reports-form #report-table .report-table-row textarea{
+  resize: none;
+  height: 100px;
+}
+
+.content-body#medical-reports-form #report-table .add-row-button{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 2em;
+  width: 100%;
+}
+
+.content-body#medical-reports-form #submit-medical-form-button{
+  display: flex;
+  margin-right: 50%;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+#medical-report-error-message{
+  margin-top: 1%;
+  color: red;
+}
+
+

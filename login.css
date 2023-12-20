@@ -1,0 +1,60 @@
+#login-ui{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-ui * {
+  display: block;
+}
+
+#login-ui img{
+  width: 200px;
+  margin: 5% auto;
+}
+
+#login-ui div{
+  display: flex;
+  padding: 1%;
+  background: #469e49;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+#login-ui div .login-field{
+  display: flex;
+  flex-direction: row;
+}
+#login-ui div .login-field{
+  margin: 1% 3%;
+}
+
+#login-ui div .login-field * {
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+#login-ui div .login-field p{
+  flex-grow: 1;    
+  width: 150px;
+  color: white;
+}
+
+#login-ui div .login-field input{
+  font-family: monospace;
+  width: 300px;
+}
+
+#login-ui p#msg{
+  color: salmon;
+  text-align: center;
+  margin: 3%;
+}
+
+#login-ui button{
+  padding: 5%;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
