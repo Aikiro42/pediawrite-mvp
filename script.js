@@ -358,7 +358,7 @@ function submitBorrowForm() {
     var _purpose = $("#borrower-form-purpose").val();
     var _otherUsers = $("#borrower-form-other-users").val();
     globalDemoData.borrowRecords.push({
-        employeeID: "0001",
+        employeeID: globalDemoData.session.employeeID,
         equipmentID: _equipmentID,
         startDate: new Date(),
         endDate: null,
